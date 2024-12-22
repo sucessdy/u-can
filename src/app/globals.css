@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@400;600;700&family=Space+Grotesk:wght@400;600&family=Exo+2:wght@400;700&family=Satoshi:wght@400;500;700&family=Fira+Code:wght@400;600&family=JetBrains+Mono:wght@400;700&family=Anton&family=Bebas+Neue&family=Oswald:wght@400;600&display=swap');
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Space Grotesk, Anton,  Montserrat, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 240 10% 3.9%;
+    
+    --secondary-backgound: #0E0A31;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 90%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: #3c2E4c
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --regal-blue: #243c5a;
+  }
+
+    
+}
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  .para-short {
+    @apply  text-sm sm:text-xl text-zinc-400 tracking-wide mb-8 max-w-screen-xl antialiased leading-loose  text-center
+  }
+}; 
